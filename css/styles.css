@@ -119,56 +119,100 @@ body {
   z-index: 2;
 }
 .nav {
-    margin: 1.2em 0;
+  margin: 1.2em 0;
 }
 .nav__items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.nav__link{
-    color: #fff;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: #f56e6e;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-    margin-top: 10px;
+.nav__link {
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f56e6e;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  margin-top: 10px;
 }
-.nav__link:hover{
-    background-color: #807ef5;
+.nav__link:hover {
+  background-color: #807ef5;
 }
-.nav__link{
-    margin-left: 5px;
+.nav__link {
+  margin-left: 5px;
 }
-.nav__link:last-child{
-    margin-left: auto;
+.nav__link:last-child {
+  margin-left: auto;
 }
-.nav__link:first-child, .nav__link:last-child{
-    text-transform: uppercase;
+.nav__link:first-child,
+.nav__link:last-child {
+  text-transform: uppercase;
 }
 .nav__item {
-    padding: .5em 1.5em;
+  padding: 0.5em 1.5em;
 }
 .page {
   flex: 1 1 auto;
+  margin-top: 300px;
 }
 .page__container {
+  display: flex;
+  flex-direction: column;
 }
 .page__monitoring {
+  padding: 50px 0px;
+  position: relative;
+  background-color: rgb(115, 170, 170);
 }
 .monitoring {
+  text-align: center;
+  font-size: 5em;
+  color: #fff;
+  text-transform: uppercase;
 }
 .page__chat {
+  margin-top: 1.5em;
+  padding: 50px 0px;
+  background-color: rgb(115, 170, 170);
 }
 .chat {
+  text-align: center;
+  font-size: 5em;
+  color: #fff;
+  text-transform: uppercase;
 }
 .footer {
 }
 .footer__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__icon {
+  margin: 1em 0;
 }
+.footer__icon img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
 .footer__copy-right {
+  padding: 8px 250px;
+  background-color: rgb(205, 217, 255);
+}
+@media (max-width: 718px) {
+  .nav__link:last-child {
+    margin-left: 5px;
+  }
+  .monitoring {
+    font-size: 2em;
+  }
+
+  .chat {
+    font-size: 2em;
+  }
 }
