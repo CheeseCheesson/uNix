@@ -215,4 +215,7 @@ body {
   .chat {
     font-size: 2em;
   }
+  .page {
+    margin-top: 350px;
+  }
 }
