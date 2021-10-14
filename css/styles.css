@@ -132,6 +132,10 @@ body {
     background-color: #f56e6e;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.nav__link:hover{
+    background-color: #807ef5;
 }
 .nav__link{
     margin-left: 5px;
