@@ -123,6 +123,7 @@ body {
 }
 .nav__items {
   display: flex;
+  flex-wrap: wrap;
 }
 .nav__link{
     color: #fff;
@@ -133,6 +134,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
+    margin-top: 10px;
 }
 .nav__link:hover{
     background-color: #807ef5;
