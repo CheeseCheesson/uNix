@@ -143,8 +143,7 @@ body {
   color: #000;
 }
 .nav__link {
-  
-  margin-left: 5px;
+
 }
 .nav__link:last-child {
   margin-left: auto;
@@ -161,9 +160,14 @@ body {
 .sub-nav__items {
   position: absolute;
   top: 32px;
-  left: 108px;
+  left: 92px;
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
+}
+.rule {
+  position: absolute;
+  left: 196px;
+
 }
 
 .sub-nav__link {
