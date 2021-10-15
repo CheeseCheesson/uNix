@@ -60,14 +60,14 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-image: url('../images/bg/bg_main.png');
-  z-index: -5;
+
 }
 ._container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0px 15px;
   box-sizing: content-box;
+  
 }
 
 ._ibg {
@@ -185,9 +185,13 @@ body {
 }
 .page {
   flex: 1 1 auto;
+  background-image: url('../images/bg/bg_main.png');
+  z-index: -5;
 }
 
 .footer {
+  background-image: url('../images/bg/bg_main.png');
+  z-index: -5;
 }
 .footer__container {
   display: flex;
