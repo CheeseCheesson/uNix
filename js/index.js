@@ -7,7 +7,19 @@ const rules = document.querySelector("#rules");
 const rule = document.querySelector(".rule");
 const statistic = document.querySelector(".statistic");
 const statBnt = document.querySelector(".stat");
-const nav = document.querySelector('.nav')
+const nav = document.querySelector(".nav");
+const closePopup = document.querySelector("#closePopup");
+let links = document.querySelectorAll('a')
+
+links.forEach((link) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault()
+    })
+})
+
+
+
+
 function show() {
   subNav.classList.toggle("_active");
 }
@@ -34,8 +46,7 @@ function hideStat() {
 }
 shop.addEventListener("mouseover", show);
 subNav.addEventListener("mouseleave", hide);
-auth.addEventListener("click", showAuth);
-popUpArea.addEventListener("click", authRemove);
+
 rules.addEventListener("mouseover", hide);
 rules.addEventListener("mouseover", showRules);
 rule.addEventListener("mouseleave", removeRules);
@@ -47,7 +58,13 @@ shop.addEventListener("mouseover", hideStat);
 statBnt.addEventListener("mouseover", showStat);
 statistic.addEventListener("mouseleave", hideStat);
 
-nav.addEventListener("mouseleave", hide)
-nav.addEventListener("mouseleave", authRemove)
-nav.addEventListener("mouseleave", removeRules)
-nav.addEventListener("mouseleave", hideStat)
+nav.addEventListener("mouseleave", hide);
+
+nav.addEventListener("mouseleave", removeRules);
+nav.addEventListener("mouseleave", hideStat);
+
+auth.addEventListener("click", showAuth);
+popUpArea.addEventListener("click", authRemove);
+
+
+closePopup.addEventListener("click", authRemove);
