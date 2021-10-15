@@ -9,16 +9,15 @@
   </head>
   <body>
     <div class="wrapper">
+     
       <header class="header">
+        <div id="particles-js"></div>
         <div class="logo">
           <a href="/" class="logo__link"> megatron</a>
-          <div class="logo__image _ibg">
-            <img src="./images/logo/background.jpg" alt="" />
-          </div>
         </div>
-
-          <nav class="header__nav nav">
-            <div class="header__container _container">
+        
+        <nav class="header__nav nav">
+          <div class="header__container _container">
             <ul class="nav__items">
               <a href="#" class="nav__link">
                 <li class="nav__item">Главная</li>
@@ -67,15 +66,12 @@
               </a>
             </ul>
           </div>
-          </nav>
-        
+        </nav>
       </header>
       <main class="page">
-        <div class="page__container _container">
-
-        </div>
+        <div class="page__container _container"></div>
       </main>
-      
+
       <footer class="footer">
         <div class="footer__container _container">
           <div class="footer__icon">
@@ -94,7 +90,7 @@
       <div class="popup">
         <a href="#" class="popup__area"></a>
         <div class="popup__body">
-          <a id='closePopup' href="">x</a>
+          <a id="closePopup" href="">x</a>
           <form action="#" class="popup__form form">
             <label for="name" id="name" class="form__label"></label>
             <input
@@ -127,6 +123,9 @@
         </div>
       </div>
     </div>
+
     <script src="./js/index.js"></script>
+    <script src="./js/particles.js-master/particles.js"></script>
+    <script src="./js/particles.js-master/app.js"></script>
   </body>
 </html>
