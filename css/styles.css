@@ -167,9 +167,11 @@ body {
 .rule {
   position: absolute;
   left: 196px;
-
 }
+.statistic{
 
+  left: 429px;
+}
 .sub-nav__link {
   display: inline-block;
   padding: 15px 10px;
@@ -230,21 +232,7 @@ body {
   padding: 8px 250px;
   background-color: rgb(205, 217, 255);
 }
-@media (max-width: 718px) {
-  .nav__link:last-child {
-    margin-left: 5px;
-  }
-  .monitoring {
-    font-size: 2em;
-  }
 
-  .chat {
-    font-size: 2em;
-  }
-  .page {
-    margin-top: 350px;
-  }
-}
 
 /* Dropdown Button */
 .dropbtn {
@@ -314,4 +302,20 @@ body {
 }
 ._active{
   display: block;
+}
+
+@media (max-width: 799px) {
+  .nav__link:last-child {
+    margin-left: 5px;
+  }
+  .monitoring {
+    font-size: 2em;
+  }
+
+  .chat {
+    font-size: 2em;
+  }
+  .page {
+    margin-top: 350px;
+  }
 }
