@@ -22,17 +22,40 @@
               <a href="#" class="nav__link">
                 <li class="nav__item">Главная</li>
               </a>
+
+              <a href="#" class="nav__link">
+                <li class="nav__item" id="shop">Магазин</li>
+              </a>
+              <ul class="sub-nav__items">
+                <li>
+                  <a href="" class="sub-nav__link">Купить привилегию</a>
+                </li>
+                <li>
+                  <a href="" class="sub-nav__link">Купить аккаунт</a>
+                </li>
+              </ul>
+
+              <a href="#" class="nav__link">
+                <li class="nav__item" id="rules">Правила</li>
+              </a>
+              <ul class="sub-nav__items">
+                <li>
+                  <a href="" class="sub-nav__link">Правила CS:GO серверов</a>
+                </li>
+                <li>
+                  <a href="" class="sub-nav__link">Правила CS:S серверов</a>
+                </li>
+              </ul>
               <a href="#" class="nav__link">
                 <li class="nav__item">SourceBans</li>
               </a>
+
               <a href="#" class="nav__link">
                 <li class="nav__item">Статистика</li>
               </a>
+
               <a href="#" class="nav__link">
-                <li class="nav__item">Магазин</li>
-              </a>
-              <a href="#" class="nav__link">
-                <li class="nav__item">Авторизация</li>
+                <li class="nav__item" id="auth">Авторизация</li>
               </a>
             </ul>
           </nav>
@@ -44,16 +67,74 @@
           <div class="page__chat chat">Чат</div>
         </div>
       </main>
+      <main class="page">
+        <div class="page__container _container">
+          <div class="page__monitoring monitoring">Мониторинг</div>
+          <div class="page__chat chat">Чат</div>
+        </div>
+      </main>
+      <main class="page">
+        <div class="page__container _container">
+          <div class="page__monitoring monitoring">Мониторинг</div>
+          <div class="page__chat chat">Чат</div>
+        </div>
+      </main>
+      <main class="page">
+        <div class="page__container _container">
+          <div class="page__monitoring monitoring">Мониторинг</div>
+          <div class="page__chat chat">Чат</div>
+        </div>
+      </main>
       <footer class="footer">
         <div class="footer__container _container">
           <div class="footer__icon">
-              <a href="#"><img src="./images/icons/vk.png" alt=""></a>
-              <a href="#"><img src="./images/icons/icons8-steam-100.png" alt=""></a>
-              <a href="#"><img src="./images/icons/icons8-steam-100.png" alt=""></a>
+            <a href="#"><img src="./images/icons/vk.png" alt="" /></a>
+            <a href="#"
+              ><img src="./images/icons/icons8-steam-100.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./images/icons/icons8-steam-100.png" alt=""
+            /></a>
           </div>
           <div class="footer__copy-right">Копирайт</div>
         </div>
       </footer>
+
+      <div class="popup">
+        <a href="#" class="popup__area"></a>
+        <div class="popup__body">
+          <form action="#" class="popup__form form">
+            <label for="name" id="name" class="form__label"></label>
+            <input
+              type="text"
+              name="name"
+              value=""
+              class="form__input"
+              placeholder="Введите имя"
+            />
+
+            <label for="nik" id="nick" class="form__label"></label>
+            <input
+              type="text"
+              name="nik"
+              value=""
+              placeholder="Введите ник в игре"
+              class="form__input"
+            />
+
+            <label for="steam" id="steam" class="form__label"></label>
+            <input
+              type="text"
+              name="steam"
+              value=""
+              placeholder="Введите Steam ID"
+              class="form__input"
+            />
+            <button class="form__btn">Зарегистрироваться</button>
+          </form>
+        </div>
+      </div>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

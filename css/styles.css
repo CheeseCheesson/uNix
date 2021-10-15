@@ -59,6 +59,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 ._container {
   max-width: 1200px;
@@ -115,32 +116,34 @@ body {
   left: 0;
 }
 .header__nav {
-  position: relative;
   z-index: 2;
 }
 .nav {
-  margin: 1.2em 0;
+ 
+  background-color: #253242;
+  
 }
 .nav__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: -5px;
+  position: relative;
 }
 .nav__link {
-  color: #fff;
+  color: #aeb3b9;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  background-color: #f56e6e;
-  border-radius: 5px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
-  margin-top: 10px;
 }
 .nav__link:hover {
-  background-color: #807ef5;
+  background-color: #fff;
+  color: #000;
 }
 .nav__link {
+  
   margin-left: 5px;
 }
 .nav__link:last-child {
@@ -152,6 +155,25 @@ body {
 }
 .nav__item {
   padding: 0.5em 1.5em;
+
+}
+
+.sub-nav__items {
+  position: absolute;
+  top: 32px;
+  left: 108px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.sub-nav__link {
+  display: inline-block;
+  padding: 15px 10px;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.sub-nav__link:hover {
+  color: #000;
 }
 .page {
   flex: 1 1 auto;
@@ -218,4 +240,74 @@ body {
   .page {
     margin-top: 350px;
   }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.082);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin: 0 auto;
+}
+.popup__body {
+  width: 30vw;
+  height: 44vh;
+  background:  url("../images/bg/bg-nav.png") rgb(63, 63, 68) repeat ;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  z-index: 3;
+}
+.popup__form {
+
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+.form__label {
+}
+.form__input {
+  margin-bottom: 20px;
+  width: 20vw;
+  height: 1vh;
+  padding: 30px;
+  font-size: 20px;
+}
+.form__btn{
+  margin-top: 1em;
+  padding: 20px 0;
+  background: #253242;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #fff
+}
+.popup__area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+._active{
+  display: block;
 }
