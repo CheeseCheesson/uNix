@@ -149,12 +149,12 @@ body {
   text-transform: uppercase;
 }
 .nav__item {
-  padding: 0.5em 1.5em;
+  padding: 1em 1.5em;
 }
 
 .sub-nav__items {
   position: absolute;
-  top: 32px;
+  top: 48px;
   left: 92px;
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
@@ -162,8 +162,10 @@ body {
 .rule {
   position: absolute;
   left: 196px;
+  top: 48px;
 }
 .statistic {
+  top: 48px;
   left: 429px;
 }
 .sub-nav__link {
@@ -318,6 +320,7 @@ body {
 @media (max-width: 799px) {
   .nav {
     background-color: #253242d7;
+    
   }
   .nav__link {
     flex: 0 0 33.3%;
